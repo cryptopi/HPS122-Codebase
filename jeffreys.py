@@ -7,40 +7,56 @@ import matplotlib.pyplot as plt
 HEADS = 1
 TAILS = 0
 RESOLUTION = 500
+EPSILON = .01
 
 sns.set()
 
-def fisher(theta):
+def cot(rad):
     return np.cos(rad) / np.sin(rad)
 
 def csc(rad):
     return 1 / np.sin(rad)
 
-def make_circle(radius):
-    x = np.linspace(0, radius, RESOLUTION * radius)
-    y = np.sqrt(radius ** 2 - x ** 2)
-    plt.plot(x, y)
-    axes = plt.gca()
-    axes.set_aspect('equal')
+def fisher_theta(theta):
+    return 1 / (theta * (1 - theta))
 
-def plot_points(func, samples, name, marker, s=65, low=0, high=1):
-    inputs = np.linspace(low, high, samples)
-    heads = np.array([func(num) for num in inputs])
-    tails = 1 - heads
-    heads = 2 * np.sqrt(heads)
-    tails = 2 * np.sqrt(tails)
-    plt.scatter(heads, tails, marker=marker, label=name, s=s)
+def p_phi(phi):
+    if np.pi / 4 < phi and phi < 3 * np.pi / 4:
+        return 1 / 2 + (1 / np.pi) * np.arcsin(cot(phi) ** 2)
+    else:
+        return 1
+
+def p_phi_prime(phi):
+    if (np.pi / 4 + EPSILON) < phi and phi < (3 * np.pi / 4 - EPSILON):
+        return (2 * cot(phi) * csc(phi) ** 2) / (np.pi * np.sqrt(1 - cot(phi) ** 4))
+    else:
+        return 0
+
+def fisher_phi(phi):
+    if p_phi(phi) == 0 or p_phi(phi) == 1:
+        return 0
+    heads = (p_phi_prime(phi) / p_phi(phi)) ** 2 * p_phi(phi)
+    tails = ((-p_phi_prime(phi) / (1 - p_phi(phi))) ** 2) * (1 - p_phi(phi))
+    return heads + tails
+
+def jeffreys(value, fisher, constant=1):
+    return np.sqrt(fisher(value)) / constant
 
 
-def make():
-    make_circle(2)
-    plot_points(phi, 30, '$\\phi$', 'o', s=115, low=0, high=np.pi)
-    plot_points(theta, 30, '$\\theta$', '^', low=0, high=1)
-    plt.title('Model Space and Uniformity')
-    plt.xlabel('Scaled Probability of Heads')
-    plt.ylabel('Scaled Probability of Tails')
+def plot_jeffreys():
+    x = np.linspace(0, np.pi, int(RESOLUTION * np.pi))
+    y = [jeffreys(num, fisher_phi) for num in x]
+    probs = [p_phi(num) for num in x]
+    plt.plot(probs, y, label='$\\phi$ prior')
+    x = np.linspace(0, 1, RESOLUTION)
+    y = [jeffreys(num, fisher_theta, constant=1) for num in x]
+    probs = x
+    plt.plot(probs, y, label='$\\theta$ prior')
+    plt.title('Jeffreys Priors')
+    plt.xlabel('Probability of Heads')
+    plt.ylabel('PDF')
     plt.legend(loc='best')
-    plt.savefig('images/model_space_uniformity.png')
+    plt.savefig('images/jeffreys.png')
     plt.clf()
 
-make()
+plot_jeffreys()
