@@ -1,0 +1,43 @@
+“Almost Surely.” Wikipedia, Wikimedia Foundation, 28 Jan. 2019, en.wikipedia.org/wiki/Almost_surely.
+“Bayesian Analysis: Advantages and Disadvantages.” SAS/STAT(R) 9.3 User's Guide, 30 Apr. 2010, support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_introbayes_sect006.htm.
+“Bayesian Statistics Explained in Simple English For Beginners.” Analytics Vidhya, 11 Mar. 2019, www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/.
+“Bernoulli Distribution.” Wikipedia, Wikimedia Foundation, 15 Mar. 2019, en.wikipedia.org/wiki/Bernoulli_distribution.
+Carpenter, Bob. “The Impact of Reparameterization on Point Estimates.” The Impact of Reparameterization on Point Estimates, 24 Apr. 2016, mc-stan.org/users/documentation/case-studies/mle-params.html.
+“Derivation of Fisher Information.” Cross Validated, stats.stackexchange.com/questions/186223/derivation-of-fisher-information.
+Diaconis, Persi, et al. “Dynamical Bias in the Coin Toss.” Stanford, Stanford, statweb.stanford.edu/~susan/papers/headswithJ.pdf.
+“Differential Entropy.” Wikipedia, Wikimedia Foundation, 24 Jan. 2019, en.wikipedia.org/wiki/Differential_entropy.
+dippynark. “How to Interpret Differential Entropy?” Cross Validated, stats.stackexchange.com/questions/256203/how-to-interpret-differential-entropy.
+“Entropy (Information Theory).” Wikipedia, Wikimedia Foundation, 17 Mar. 2019, en.wikipedia.org/wiki/Entropy_(information_theory).
+“Fisher Information Comparison.” Cross Validated, 1 Feb. 1969, stats.stackexchange.com/questions/339460/fisher-information-comparison.
+“Fisher Information Matrix.” Fisher Information Matrix - Agustinus Kristiadi's Blog, wiseodd.github.io/techblog/2018/03/11/fisher-information/.
+“Fisher Information Metric.” Wikipedia, Wikimedia Foundation, 22 Jan. 2019, en.wikipedia.org/wiki/Fisher_information_metric.
+“Fisher Information.” Stanford University, Stanford University, web.stanford.edu/class/stats311/Lectures/lec-09.pdf.
+“Fisher Information.” Wikipedia, Wikimedia Foundation, 19 Mar. 2019, en.wikipedia.org/wiki/Fisher_information.
+“Fisher's Score Function Has Mean Zero - What Does That Even Mean?” Cross Validated, 16 Aug. 2016, stats.stackexchange.com/questions/228601/fishers-score-function-has-mean-zero-what-does-that-even-mean.
+Jordan, Michael I. “Reference Priors.” Berkely University, Berkely University, people.eecs.berkeley.edu/~jordan/courses/260-spring10/lectures/lecture8.pdf.
+Kass, R. E. (1989). The Geometry of Asymptotic Inference. Statistical Science 4 188–234.
+Kim, Aerin. “The Intuition behind Shannon's Entropy.” Towards Data Science, Towards Data Science, 29 Sept. 2018, towardsdatascience.com/the-intuition-behind-shannons-entropy-e74820fe9800.
+“Kullback–Leibler Divergence.” Wikipedia, Wikimedia Foundation, 22 Mar. 2019, en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence.
+Kurt, Will. “Kullback-Leibler Divergence Explained.” Count Bayesie, Count Bayesie, 10 May 2017, www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained.
+Lambert, Ben. “An Introduction to Jeffreys Priors - 2.” YouTube, YouTube, 15 May 2018, www.youtube.com/watch?v=Kr0dz_z6e-0&index=42&list=PLwJRxp3blEvZ8AKMXOy0fc0cqT61GsKCG.
+Laurent, Stéphane. “Why Are Jeffreys Priors Considered Noninformative?” Cross Validated, stats.stackexchange.com/questions/7519/why-are-jeffreys-priors-considered-noninformative.
+Ly, Alexander, et al. “A Tutorial on Fisher Information.” Journal of Mathematical Psychology, vol. 80, 18 Oct. 2017, pp. 40–55., doi:10.1016/j.jmp.2017.05.006.
+Marsh, Charles. “Introduction to Continuous Entropy.” Princeton University, Department of Computer Science, Princeton University, 13 Dec. 2013, www.crmarsh.com/static/pdf/Charles_Marsh_Continuous_Entropy.pdf.
+Orlof, Jeremy, and Jonathan Bloom. Conjugate Priors: Beta and Normal.
+“Principle of Indifference.” Wikipedia, Wikimedia Foundation, 28 Dec. 2018, en.wikipedia.org/wiki/Principle_of_indifference.
+“Relative Entropy.” From Wolfram MathWorld, mathworld.wolfram.com/RelativeEntropy.html.
+Rice, Ken. “Bayesian Statistics (a Very Brief Introduction).” Washington University, Washington University, 4 Apr. 2018, faculty.washington.edu/kenrice/BayesIntroClassEpi2018.pdf.
+“Riemannian Manifold.” Wikipedia, Wikimedia Foundation, 16 Mar. 2019, en.wikipedia.org/wiki/Riemannian_manifold.
+“Riemannian Metric.” From Wolfram MathWorld, mathworld.wolfram.com/RiemannianMetric.html.
+“Score (Statistics).” Wikipedia, Wikimedia Foundation, 4 Mar. 2019, en.wikipedia.org/wiki/Score_(statistics).
+“Sensitivity Analysis.” Wikipedia, Wikimedia Foundation, 15 Mar. 2019, en.wikipedia.org/wiki/Sensitivity_analysis.
+Serrano, Luis. “Shannon Entropy, Information Gain, and Picking Balls from Buckets.” Medium, Udacity Inc, 5 Nov. 2017, medium.com/udacity/shannon-entropy-information-gain-and-picking-balls-from-buckets-5810d35d54b4.
+Shunpike, Stan. “What Kind of Information Is Fisher Information?” Cross Validated, stats.stackexchange.com/questions/196576/what-kind-of-information-is-fisher-information.
+Taneja, Inder Jeet. “Entropy of a Continuous Random Variable.” Entropy of a Continuous Random Variable, 21 June 2001, www.mtm.ufsc.br/~taneja/book/node13.html.
+“The Jeffreys Prior.” Duke University, Duke University, www2.stat.duke.edu/courses/Fall11/sta114/jeffreys.pdf.
+“The Score Statistic.” Calvin, Calvin, www.calvin.edu/~rpruim/courses/m343/session5.pdf.
+“Theoretical Motivation for Using Log-Likelihood vs Likelihood.” Cross Validated, stats.stackexchange.com/questions/289190/theoretical-motivation-for-using-log-likelihood-vs-likelihood.
+“Use of the Jeffreys Prior in Multidimensional Models.” Cross Validated, stats.stackexchange.com/questions/102983/use-of-the-jeffreys-prior-in-multidimensional-models.
+Vistocco, Domenico. Score Function and Fisher Information. domenicovistocco.it/teachingMaterials/busStats/additionalMaterials/score-function-fisher-information.pdf.
+“Why Is the Jeffreys Prior Useful?” Cross Validated, stats.stackexchange.com/questions/38962/why-is-the-jeffreys-prior-useful/38981.
+Zheng, Songfeng. “Fisher Information and Cramer-Rao Bound.” Missouri State, Missouri State, people.missouristate.edu/songfengzheng/Teaching/MTH541/Lecture%20notes/Fisher_info.pdf.

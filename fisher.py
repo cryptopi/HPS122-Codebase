@@ -69,45 +69,26 @@ def plot_scores():
     plt.savefig('fisher_score.png')
     plt.clf()
 
+def plot_fisher_shannon():
+    N = 5
+    x = np.linspace(0, 1, RESOLUTION)
+    y_var = [variance(theta) for theta in x]
+    y_fisher = np.array([fisher(theta) for theta in x])
+    y_ent = np.array([entropy(theta) for theta in x])
+    plt.plot(x, y_fisher, label='Fisher')
+    plt.plot(x, 3 / y_ent, label='Inverse Entropy')
+    plt.plot(x, y_ent, label='Entropy')
+    axes = plt.gca()
+    axes.set_ylim([-1, 20])
+    plt.title('Fisher Information vs Shannon Information')
+    plt.xlabel('$\\theta$')
+    plt.ylabel('Value')
+    plt.legend(loc='best')
+    plt.savefig('images/fisher_shannon.png')
 
 
 if __name__ == '__main__':
     # plot_likelihood()
     # plot_loglikelihood()
     # plot_scores()
-
-    # x = np.linspace(0, 1, RESOLUTION)
-    # y_var = [variance(theta) for theta in x]
-    # y_fisher = [fisher(theta) for theta in x]
-    # y_ent = np.array([entropy(theta) for theta in x])
-    # plt.plot(x, y_var, label='Var')
-    # plt.plot(x, y_fisher, label='Fisher')
-    # # plt.plot(x, 3 / y_ent, label='Entropy')
-    # plt.plot(x, 3 / y_ent, label='Entropy')
-    # axes = plt.gca()
-    # axes.set_ylim([0, 15])
-    # # plt.title('Scores of Heads and tails')
-    # # plt.xlabel('$\\theta$')
-    # # plt.ylabel('Score')
-    # plt.legend(loc='best')
-    # plt.savefig('temp.png')
-
-
-
-    N = 5
-    x = np.linspace(0, 1, RESOLUTION)
-    y_var = [variance(theta) for theta in x]
-    y_fisher = np.array([fisher(theta) for theta in x])
-    y_fisher = 1 / 2 * np.log(2 * 3.1415927 * (1 / (N * y_fisher) ** 2))
-    print(y_fisher)
-    y_ent = np.array([entropy(theta) for theta in x])
-    plt.plot(x, y_fisher, label='Fisher')
-    # plt.plot(x, 3 / y_ent, label='Entropy')
-    plt.plot(x, y_ent, label='Entropy')
-    axes = plt.gca()
-    axes.set_ylim([-5, 2])
-    # plt.title('Scores of Heads and tails')
-    # plt.xlabel('$\\theta$')
-    # plt.ylabel('Score')
-    plt.legend(loc='best')
-    plt.savefig('temp.png')
+    plot_fisher_shannon()
